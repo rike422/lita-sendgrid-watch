@@ -1,0 +1,13 @@
+<% if !@maintenances.nil? && @maintenances.count != 0 then %>
+maintenanceについての情報は以下のようになっています。
+<% @maintenances.each do |maintenance| %>
+   * <%= maintenance %>
+<% end %>
+<% end %>
+
+<% if !@unavailables.nil? && @unavailables.count != 0 then %>
+unavailableについての情報は以下のようになっています。
+<% @unavailables.each do |unavailable| %>
+   * <%= unavailable %>
+<% end %>
+<% end %>
